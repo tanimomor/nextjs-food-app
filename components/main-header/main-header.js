@@ -1,19 +1,12 @@
-'use client';
-
 import Link from "next/link";
 
 import logoImg from "@/assets/logo.png";
 import classes from "./main-header.module.css";
 import Image from "next/image";
-import {usePathname} from "next/navigation";
 import MainHeaderBackground from "@/components/main-header/main-header-background";
-import {useEffect, useRef, useState} from "react";
+import NavLink from "@/components/main-header/nav-link";
 
 export default function MainHeader() {
-    const path = usePathname();
-    console.log(path)
-    const [prevPath, setPrevPath] = useState(path);
-
     return <>
         <MainHeaderBackground/>
         <header className={classes.header}>
@@ -23,8 +16,8 @@ export default function MainHeader() {
             </Link>
             <nav className={classes.nav}>
                 <ul>
-                    <li><Link href="/meals" className={path.startsWith('/meals') ? classes.active : undefined}>Browse Meals</Link></li>
-                    <li><Link href="/community" className={path==='/community' ? classes.active : undefined}>Foodies Community</Link></li>
+                    <NavLink href="/meals">Browse Meals</NavLink>
+                    <NavLink href="/community">Foodies Community</NavLink>
                 </ul>
             </nav>
         </header>
