@@ -2,6 +2,8 @@
 
 NextLevel Food is a web application built using Next.js, designed to provide a seamless user experience for discovering and ordering delicious meals.
 
+https://github.com/user-attachments/assets/3fc6d63f-c4e3-49a3-a5ec-fec7956d86d0
+
 ## Table of Contents
 
 - [Introduction](#introduction)
@@ -21,14 +23,6 @@ NextLevel Food is a web application designed to help users find and order food e
 - Browse a wide variety of food items.
 - View detailed information about each dish.
 - Add items to your cart and place orders.
-
-## Demo
-
-To see how NextLevel Food works, watch our demo video:
-
-https://github.com/user-attachments/assets/3fc6d63f-c4e3-49a3-a5ec-fec7956d86d0
-
-
 
 
 ## Installation
